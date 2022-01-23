@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Open+Sans:wght@400;600&family=Orbitron:wght@500&family=Press+Start+2P&display=swap");
+@import "reset.css";
+
+/* Components */
+@import "components/nav-bar.css";
+@import "components/main-logo.css";
+@import "components/header.css";
+
+/* screens */
+@import "home.css";
+@import "profile.css";
+@import "hobby.css";
+@import "contact.css";
+
+.home-screen {
+  background-image: url("screen-image/before.png");
+  background-repeat: no-repeat;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  height: 300vh;
+}
+
+body {
+  background-color: #1482c7;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+}

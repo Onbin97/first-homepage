@@ -1,0 +1,76 @@
+.Hello {
+  display: flex;
+  margin-top: 30px;
+  position: relative;
+}
+.Hello img {
+  height: 1300px;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-home {
+  position: absolute;
+  z-index: 2;
+  left: 370px;
+  top: 200px;
+  font-family: "Press Start 2P", cursive;
+}
+
+@keyframes chatScreen-ani {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#introduce__first {
+  opacity: 0;
+  font-size: 120px;
+  margin-bottom: 45px;
+  animation: chatScreen-ani 1.5s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+#introduce__2nd {
+  opacity: 0;
+  font-size: 40px;
+  margin-bottom: 40px;
+  animation: chatScreen-ani 1.5s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+#chat-box p {
+  opacity: 0;
+  font-size: 30px;
+  margin-bottom: 30px;
+  animation: chatScreen-ani 1.5s ease-in-out forwards;
+  animation-delay: 4s;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-image: url("screen-image/after.png");
+  background-repeat: no-repeat;
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  padding-bottom: 200px;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  animation-delay: 1s;
+  z-index: 99;
+}

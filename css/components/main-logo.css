@@ -1,0 +1,8 @@
+.main-logo i {
+  font-size: 40px;
+  margin-right: 3px;
+}
+
+.main-logo :hover {
+  color: turquoise;
+}

@@ -1,0 +1,63 @@
+.home-screen__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 300px;
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.home-screen__title__second {
+  margin-right: 200px;
+}
+.home-screen__title__first {
+  margin-left: 400px;
+}
+
+.switch-before {
+  margin-top: 200px;
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-before i {
+  color: turquoise;
+}
+@keyframes heartBeat {
+  0% {
+    color: turquoise;
+    transform: none;
+  }
+  50% {
+    color: rgb(175, 245, 238);
+    transform: scale(1.3);
+  }
+  100% {
+    color: turquoise;
+    transform: none;
+  }
+}
+
+.switch-before:hover i {
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
+}
+
+.switch-before:active i {
+  color: rgb(175, 245, 238);
+}
+
+.header-body {
+  margin-top: 140px;
+  background-color: #1482c7;
+}
+
+.header_title span {
+  display: flex;
+  justify-content: center;
+  font-size: 170px;
+  font-family: "Press Start 2P", cursive;
+}
